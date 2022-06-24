@@ -1,0 +1,28 @@
+# We want users to Builder/build themselves
+
+# Directly Builder/build
+**Builder/build/
+**Builder/build/bin/libcathook.so
+
+# From Builder/build/
+**Builder/build/Makefile
+**Builder/build/CMakeCache.txt
+**Builder/build/cmake_install.cmake
+
+# Source (SRC)
+**Builder/build/src/Makefile
+**Builder/build/src/cmake_install.cmake
+
+# Include
+**Builder/build/include/Makefile
+**Builder/build/include/cmake_install.cmake
+
+# External
+**Builder/build/Makefile
+**Builder/build/cmake_install.cmake
+
+# CmakeFiles (Most Important)
+**Builder/build/CMakeFiles/Makefile2
+**Builder/build/CMakeFiles/cathook.dir
+**Builder/build/CMakeFiles/CMakeTmp
+**Builder/build/CMakeFiles/data.dir

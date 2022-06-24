@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+sudo=${CH_SUDO:-sudo}
+set -e
+
+if [ $(id -u) -eq 0 ]; then 
+    echo -e "Cannot run as root"; 
+    exit 1 
+fi
+
+function Build() {
+
+    # Build X86 Port for Game
+    make x86 || {
+        echo "Failed to compile"
+    }
+
+    # Clean .o Libs so reduce size
+    make clean
+
+    # Build completed
+    echo "Compiled successfully"
+}
+
+Build
